@@ -25,20 +25,22 @@ SECRET_KEY = "django-insecure-0j9gdwp=r(dtxpn+jc!-b70+5dz2yiya@r9hv&c#k207#-a3dj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-env.eba-nu6jeuzq.us-west-2.elasticbeanstalk.com', 
-                 '127.0.0.1']
+ALLOWED_HOSTS = [
+    "swe1-app-env.eba-tkbtpr3q.us-west-2.elasticbeanstalk.com",
+    "127.0.0.1",
+]
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'polls.apps.PollsConfig',
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    "polls.apps.PollsConfig",
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
 ]
 
 MIDDLEWARE = [
@@ -90,9 +92,15 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
     },
-    {"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",},
-    {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",},
-    {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",},
+    {
+        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
+    },
+    {
+        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
+    },
+    {
+        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
+    },
 ]
 
 
