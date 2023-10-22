@@ -13,10 +13,10 @@ deploy:
   - provider: elasticbeanstalk
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_ACCESS_SECRET
-    region: "us-east-1"
+    region: "us-west-2"
     app: "swe1-app"
-    env: "swe1-app-dev"
-    bucket_name: "elasticbeanstalk-us-east-1-452681582606"
+    env: "swe1-app-env"
+    bucket_name: "elasticbeanstalk-us-west-2-452681582606"
     on:
       branch: main
 
