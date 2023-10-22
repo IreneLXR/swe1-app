@@ -1,3 +1,5 @@
+travis-*.zip
+
 __pycache__/
 *.pyc
 
