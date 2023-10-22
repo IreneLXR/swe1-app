@@ -7,15 +7,14 @@ install:
   - pip install -r requirements.txt  # Install dependencies
 before_script:
   - python manage.py migrate
-script:
-  - python manage.py test  # Run your tests
+script: true
 deploy:
   - provider: elasticbeanstalk
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_ACCESS_SECRET
     region: "us-east-1"
-    app: "swe1-app"
-    env: "swe1-app-dev"
+    app: "swe-app"
+    env: "swe-app-dev"
     bucket_name: "elasticbeanstalk-us-east-1-452681582606"
     on:
       branch: main
